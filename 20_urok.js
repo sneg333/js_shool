@@ -16,15 +16,34 @@ console.log(option['name']);
 
 // оператор delete удаляет что-то из объекта
 delete option.name;
-
 console.log(option);
 
 //данная конструкция перебирает все вложения
+const option = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red',
+    }
+};
+
 for (let key in option) {
     console.log(`свойства ${key} имеет значение ${option[key]}`);
 }
 
 // для того что бы отображалось всё вложенное
+const option = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red',
+    }
+};
+
 for (let key in option) {
     if (typeof(option[key]) === 'object') {
         for (let i in option[key]) {
@@ -35,7 +54,7 @@ for (let key in option) {
     }
 }
 
-// перебрать своцства если знаем ключи
+// перебрать свойства если знаем ключи
 let counter = 0;
 for (let key in option) {
     counter++;
@@ -54,5 +73,17 @@ const option = {
 };
 console.log(Object.keys(option).length);
 
+//деструктуризация объекта, доставать объекты из функции, и она становится отдельной переменной
+const option = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red',
+    }
+};
+const {border, bg} = option.colors;
+console.log(border);
 
-
+ 
