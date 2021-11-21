@@ -22,6 +22,9 @@ for (let value of arr) {
     console.log(value);
 }
 
+//item это то что мы перебираем, название произвольное
+// i это номер по порядку
+// третий аргумент это ссылка на тот массив который мы перебираем
 const arr = [1, 2, 3, 4, 6 ,7];
 arr.forEach(function(item, i, arr) {
     console.log(`${i}: ${item} внутри массива ${arr}`);
