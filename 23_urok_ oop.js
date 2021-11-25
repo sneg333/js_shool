@@ -1,5 +1,5 @@
 // прототипно ориентированное программирование
-"use_scrict";
+"use_strict";
 
 const soldat = {
     energi: 400,

@@ -1,5 +1,5 @@
 // ssilki
-"use_scrict";
+"use_strict";
 
 // объекты не изменяютя
 const obj = {

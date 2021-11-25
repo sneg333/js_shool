@@ -1,5 +1,5 @@
 // объекты и их методы
-"use_scrict";
+"use_strict";
 
 const option = {
     name: 'test',
