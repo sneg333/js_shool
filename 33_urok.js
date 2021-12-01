@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (newFilm.length > 11) {
                 newFilm = `${newFilm.substring(0, 12)}...`;
             }
+            // отмечаем чекбоксом любимый фильм
+            if (favorit) {
+                console.log("любимый фильм");
+            }
+
 
             movieDB.movies.push(newFilm);
             sortArr(movieDB.movies);
